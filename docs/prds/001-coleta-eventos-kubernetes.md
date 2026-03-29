@@ -1,6 +1,6 @@
 ---
 prd_number: "001"
-status: concluído
+status: rascunho
 priority: alta
 created: 2026-03-22
 issue:
@@ -116,13 +116,13 @@ Como engenheiro DevOps, quero que os eventos Warning do cluster sejam coletados 
 
 **Funcionalidades:** US01
 
-- [x] Configurar autenticação com o cluster via Python SDK Kubernetes (US01)
-- [x] Implementar loop assíncrono com intervalo configurável via `EVENT_COLLECTION_INTERVAL_MINUTES` (US01)
-- [x] Filtrar eventos por tipo (Warning) e por timestamp (dentro do intervalo) com fallback de eventTime → deprecatedLastTimestamp (US01)
-- [x] Implementar transformação dos eventos do SDK para o contrato de saída definido (US01)
-- [x] Criar classe `EventHandler` com implementação placeholder que imprime eventos no output (US01)
-- [x] Agrupar eventos coletados no formato do contrato e entregar ao `EventHandler` (US01)
-- [x] Tratar erros de conectividade e RBAC com logging adequado, sem interromper o loop (US01)
+- [ ] Configurar autenticação com o cluster via Python SDK Kubernetes (US01)
+- [ ] Implementar loop assíncrono com intervalo configurável via `EVENT_COLLECTION_INTERVAL_MINUTES` (US01)
+- [ ] Filtrar eventos por tipo (Warning) e por timestamp (dentro do intervalo) com fallback de eventTime → deprecatedLastTimestamp (US01)
+- [ ] Implementar transformação dos eventos do SDK para o contrato de saída definido (US01)
+- [ ] Criar classe `EventHandler` com implementação placeholder que imprime eventos no output (US01)
+- [ ] Agrupar eventos coletados no formato do contrato e entregar ao `EventHandler` (US01)
+- [ ] Tratar erros de conectividade e RBAC com logging adequado, sem interromper o loop (US01)
 
 **Critério de conclusão:**
 - Condição: A aplicação conecta ao cluster, coleta eventos Warning a cada intervalo configurado e agrupa no formato do contrato de saída para entrega
